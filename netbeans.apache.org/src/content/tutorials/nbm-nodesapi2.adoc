@@ -191,7 +191,7 @@ public String getHtmlDisplayName() {
 [start=2]
 1. Run the Event Manager again and now you should see the following:
 
-image::images/nodes-2_73_html-display-1.png[]
+image::images/nodes-2_73_html-display-2.png[]
 
 One minor thing we can do to improve appearance here: we are currently using hard-coded colors in your HTML. Yet the NetBeans Platform can run under various look and feels, and there's no guarantee that your hard-coded color will not be the same as or very close to the background color of the tree or other UI component your Node appears in.
 
