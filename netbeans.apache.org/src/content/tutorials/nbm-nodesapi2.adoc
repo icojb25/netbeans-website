@@ -482,7 +482,7 @@ Property dateProp = new PropertySupport.Reflection(obj, String.class, "getDateAs
 [start=6]
 1. Build and run the application. You should now see the date displayed:
 
-image::images/nodes-2_73_prop-display-2.png[]
+image::images/nodes-2_73_prop-display-1.png[]
 
 
 == Read-Write Properties
@@ -546,7 +546,7 @@ Property dateProp = new PropertySupport.Reflection(obj, String.class, "getDateAs
 [start=6]
 1. Build and run the EventManager, and notice that you can now select an instance of `EventNode` in `MyEditor` and actually edit the date value, as shown below:
 
-image::images/nodes-2_73_prop-display-3.png[]
+image::images/nodes-2_73_prop-display-2.png[]
 
 However, there is still one bug in this code: when you change the Date property, you should also update the display name of your node. So you will make one more change to `EventNode` and have it listen for property changes on `Event`.
 
@@ -591,7 +591,7 @@ public void propertyChange(PropertyChangeEvent evt) {
 [start=11]
 1. Build and Run again, select a `EventNode` in the `MyEditor` window and change its `Date` property. Notice that the display name of the `Node` is now updated correctly, as shown below, where the day number is set to 25 and is now reflected both on the node and in the property sheet:
 
-image::images/nodes-2_73_prop-display-4.png[]
+image::images/nodes-2_73_prop-display-3.png[]
 
 
 == Grouping Property Sets
@@ -645,7 +645,7 @@ protected Sheet createSheet() {
 [start=3]
 1. Run the Event Manager again, and notice that there are now buttons at the top of the property sheet, and there is one property under each, as seen here:
 
-image::images/nbm-nodesapi2/prop-display-5.png[]
+image::images/nodes-2_73_prop-display-4.png[]
 
 
 == General Property Sheet Caveats
